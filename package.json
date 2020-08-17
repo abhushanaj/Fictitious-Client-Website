@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass ./sass/main.scss ./styles/style.css -w"
+    "watch:sass": "node-sass ./sass/main.scss ./styles/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' styles/style.css -o styles/style.prefix.css",
+    "compress:css": "node-sass styles/style.prefix.css styles/style.css --output-style compressed",
+    "build": "npm run prefix:css && npm run compress:css"
   },
   "author": "Abhushan A Joshi",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
   }
 }
