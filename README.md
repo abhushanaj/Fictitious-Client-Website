@@ -5,3 +5,5 @@ The one stop website to showcase all the work done as a part of the Fictitious C
 The code repository can be found at [Fictitious-Client-Code]("https://github.com/abhu-A-J/Fictitious-Client-Code")
 
 The UI for all the landig page was done as a part of challenges from [Frontend Mentor]("https://www.frontendmentor.io/challenges")
+
+https://abhu-a-j.github.io/Fictitious-Client-Website/
