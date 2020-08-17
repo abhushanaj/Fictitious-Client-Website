@@ -1,0 +1,116 @@
+/* Colors */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 1600px) {
+    html {
+      font-size: 76%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1200px) {
+    .u-container {
+      margin: 90%; } }
+  @media only screen and (min-width: 1600px) {
+    .u-container {
+      max-width: 1400px; } }
+
+.github__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3rem;
+  right: 3rem; }
+  .github__logo img {
+    max-width: 100%; }
+
+.main-heading {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 4rem;
+  font-family: "Pangolin", cursive;
+  font-weight: normal;
+  color: #ef6f6c;
+  letter-spacing: 2px; }
+  @media only screen and (max-width: 550px) {
+    .main-heading {
+      font-size: 3.3rem;
+      margin-top: 6rem; } }
+
+.tagline {
+  color: #22577a;
+  font-size: 1.6rem;
+  margin: 2.5rem auto;
+  text-align: center;
+  font-family: "Space Mono", monospace, sans-serif;
+  width: 60%; }
+  @media only screen and (max-width: 550px) {
+    .tagline {
+      width: 90%; } }
+  .tagline a {
+    color: #ef6f6c; }
+    .tagline a:hover {
+      color: rgba(239, 111, 108, 0.8); }
+
+.landing-grid {
+  display: flex;
+  margin: 5rem auto;
+  flex-direction: column; }
+
+.grid__box {
+  margin: 2rem auto;
+  width: max-content;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 1s ease-in-out; }
+  @media only screen and (max-width: 770px) {
+    .grid__box {
+      width: 80%; } }
+  .grid__box:hover {
+    filter: blur(25%); }
+    .grid__box:hover .project__box {
+      display: flex; }
+  .grid__box img {
+    border-radius: 12px;
+    max-width: 100%; }
+
+.project__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(50, 55, 59, 0.8), rgba(50, 55, 59, 0.7));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border-radius: 12px;
+  display: none; }
+
+.project__name {
+  color: #9cc4b2;
+  font-size: 2.5rem;
+  font-family: "Space Mono", monospace; }
+  @media only screen and (max-width: 600px) {
+    .project__name {
+      font-size: 1.5rem; } }
